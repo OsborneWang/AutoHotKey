@@ -6,14 +6,21 @@ CapsLock & f::Send("{Right}")
 CapsLock & e::Send("{Up}")
 CapsLock & d::Send("{Down}")
 
-; Delete and BackSpace by CapsLock+E and CapsLock+Q
+; Delete and BackSpace by CapsLock+W and CapsLock+R
 CapsLock & w::Send("{BackSpace}")
 CapsLock & r::Send("{Delete}")
 
-; Jump to the beginning and end of the current word by CapsLock+A and CapsLock+S
+; Jump to the beginning and end of the current word by CapsLock+A and CapsLock+G
 CapsLock & a::Send("^{Left}")
 CapsLock & g::Send("^{Right}")
 
-; Jump to the beginning and end of the current line by CapsLock+Q and CapsLock+W
+; Jump to the beginning and end of the current line by CapsLock+Q and CapsLock+T
 CapsLock & q::Send("{Home}")
 CapsLock & t::Send("{End}")
+
+; Select the current word by CapsLock + C
+CapsLock & c::
+{
+    Send("^{Left}")
+    Send("^+{Right}")
+}
