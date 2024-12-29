@@ -24,3 +24,6 @@ CapsLock & c::
     Send("^{Left}")
     Send("^+{Right}")
 }
+
+; Use CapsLock and Space instead of Enter
+CapsLock & Space::Send("{Enter}")
