@@ -14,9 +14,9 @@ CapsLock & r::Send("{Delete}")
 CapsLock & a::Send("^{Left}")
 CapsLock & g::Send("^{Right}")
 
-; Jump to the beginning and end of the current line by CapsLock+Q and CapsLock+T
-CapsLock & q::Send("{Home}")
-CapsLock & t::Send("{End}")
+; Jump to the beginning and end of the current line by CapsLock+H and CapsLock+L
+CapsLock & h::Send("{Home}")
+CapsLock & l::Send("{End}")
 
 ; Select the current word by CapsLock + C
 CapsLock & c::
