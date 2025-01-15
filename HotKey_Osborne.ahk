@@ -29,7 +29,7 @@ CapsLock & g::Send("^{Right}")
 CapsLock & Space::Send("{Enter}")
 
 
-# Vim key
+; ====Vim key====
 ; Move the cursor by CapsLock + H\J\K\L
 CapsLock & h::Send("{Left}")
 CapsLock & l::Send("{Right}")
