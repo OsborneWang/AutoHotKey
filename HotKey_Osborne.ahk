@@ -15,15 +15,23 @@ CapsLock & a::Send("^{Left}")
 CapsLock & g::Send("^{Right}")
 
 ; Jump to the beginning and end of the current line by CapsLock+H and CapsLock+L
-CapsLock & h::Send("{Home}")
-CapsLock & l::Send("{End}")
+; CapsLock & h::Send("{Home}")
+; CapsLock & l::Send("{End}")
 
 ; Select the current word by CapsLock + C
-CapsLock & c::
-{
-    Send("^{Left}")
-    Send("^+{Right}")
-}
+; CapsLock & c::
+; {
+;     Send("^{Left}")
+;     Send("^+{Right}")
+; }
 
 ; Use CapsLock and Space instead of Enter
 CapsLock & Space::Send("{Enter}")
+
+
+# Vim key
+; Move the cursor by CapsLock + H\J\K\L
+CapsLock & h::Send("{Left}")
+CapsLock & l::Send("{Right}")
+CapsLock & k::Send("{Up}")
+CapsLock & j::Send("{Down}")
